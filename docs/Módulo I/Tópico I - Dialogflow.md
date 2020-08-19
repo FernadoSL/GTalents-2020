@@ -13,3 +13,5 @@ Podemos utilizar o assistente via vários dispositivos, Google Home, Google Assi
 
 #### Multi Canais
 Podemos integrar o assistente com ferramentas de comunicações do mercado, como Slack, Facebook Messenger e etc...
+
+![intro](https://raw.githubusercontent.com/FernadoSL/GTalents-2020/master/img/intro-df.bmp?token=ADCUCADQ7GNE5LRHAZSKL3K7I3HMO)
