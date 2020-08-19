@@ -11,5 +11,5 @@ Frases usadas para treinar o algorimtmo de machine learning do Google, para q o 
 Resposta do agente, escolhida conforme a intenção do usuário.
 
 ### Referências:
-https://cloud.google.com/dialogflow/docs/intents-overview
-https://medium.com/botsbrasil/pt-br-dialogflow-intents-4755a2238848
+ - https://cloud.google.com/dialogflow/docs/intents-overview
+ - https://medium.com/botsbrasil/pt-br-dialogflow-intents-4755a2238848
