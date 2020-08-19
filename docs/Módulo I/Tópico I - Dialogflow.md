@@ -1,17 +1,17 @@
-### Dialogflow
+## Dialogflow
 
 Ferramenta do Google para criarmos assitentes de conversação com caracteristicas como:
 
-#### Inteligência Artificial
+### Inteligência Artificial
 Inclui processamento de linguagem natural, onde vamos conseguir detectar o que usuário pretende dizer de formas diferentes.
 
-#### Plataforma Integra com GCP (Google Cloud Platform)
+### Plataforma Integra com GCP (Google Cloud Platform)
 Podemos integrar com serviços da GCP como o Firebase Functions
 
-#### Multi Plataforma
+### Multi Plataforma
 Podemos utilizar o assistente via vários dispositivos, Google Home, Google Assistant e etc...
 
-#### Multi Canais
+### Multi Canais
 Podemos integrar o assistente com ferramentas de comunicações do mercado, como Slack, Facebook Messenger e etc...
 
 ![intro](https://raw.githubusercontent.com/FernadoSL/GTalents-2020/master/img/intro-df.bmp?token=ADCUCADQ7GNE5LRHAZSKL3K7I3HMO)
