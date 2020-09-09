@@ -1,0 +1,37 @@
+[
+  {
+    "value": "pão francês",
+    "synonyms": [
+      "pão francês",
+      "pão cacetinho"
+    ]
+  },
+  {
+    "value": "pão de sanduíche",
+    "synonyms": [
+      "pão de sanduíche",
+      "pão de sanduixe"
+    ]
+  },
+  {
+    "value": "pão de sanduíche 7 grãos",
+    "synonyms": [
+      "pão de sanduíche 7 grãos",
+      "pão 7 grãos"
+    ]
+  },
+  {
+    "value": "bagete",
+    "synonyms": [
+      "bagete",
+      "baguete"
+    ]
+  },
+  {
+    "value": "pão português",
+    "synonyms": [
+      "pão português",
+      "pão portugues"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "value": "pão",
+    "synonyms": [
+      "pão"
+    ]
+  },
+  {
+    "value": "leite",
+    "synonyms": [
+      "leite",
+      "leie"
+    ]
+  },
+  {
+    "value": "refrigerante",
+    "synonyms": [
+      "refrigerante",
+      "pepsi",
+      "coca cola",
+      "guaraná"
+    ]
+  }
+]
