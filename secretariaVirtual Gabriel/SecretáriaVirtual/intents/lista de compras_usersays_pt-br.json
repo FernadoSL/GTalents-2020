@@ -1,0 +1,412 @@
+[
+  {
+    "id": "d4c0175e-cbf7-4e23-9d94-ccc12449c438",
+    "data": [
+      {
+        "text": "adicionar",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "5 pacotes",
+        "meta": "@sys.unit-information",
+        "alias": "unit-information",
+        "userDefined": false
+      },
+      {
+        "text": " de ",
+        "userDefined": false
+      },
+      {
+        "text": "pão de cacetinho",
+        "meta": "@tiposDePaes",
+        "alias": "tiposDePaes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "2cf48d49-fdea-4b97-81ad-9a20ca0156ee",
+    "data": [
+      {
+        "text": "adicionar",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "pão de sanduíche",
+        "meta": "@tiposDePaes",
+        "alias": "tiposDePaes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "7bd907d3-5786-47b7-9d38-81b414e304d6",
+    "data": [
+      {
+        "text": "tesla",
+        "meta": "@TeslaAssistente",
+        "alias": "teslaassistente",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "adiciona",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "pão 7 grãos",
+        "meta": "@tiposDePaes",
+        "alias": "tiposDePaes",
+        "userDefined": true
+      },
+      {
+        "text": " na lista",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "a2ee5ffe-374e-46ca-bb57-8653a99d4cdd",
+    "data": [
+      {
+        "text": "adiciona",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "pão português",
+        "meta": "@tiposDePaes",
+        "alias": "tiposDePaes",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "ba2170aa-ed68-4d9b-a7ae-a4db9a7caa1e",
+    "data": [
+      {
+        "text": "adiciona",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "leite semidesnatado",
+        "meta": "@TiposDeLeites",
+        "alias": "TiposDeLeites",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "ce0432b2-c57c-472a-a8fd-b81c72b933de",
+    "data": [
+      {
+        "text": "adiciona",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "leite desnatado",
+        "meta": "@TiposDeLeites",
+        "alias": "TiposDeLeites",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "c5941905-ca87-46a8-bede-9ab89d7d06d5",
+    "data": [
+      {
+        "text": "adiciona",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "leite integral",
+        "meta": "@TiposDeLeites",
+        "alias": "TiposDeLeites",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "2e706892-90eb-4220-ba15-897d8126e7b2",
+    "data": [
+      {
+        "text": "adiciona",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "leite",
+        "meta": "@TiposDeLeites",
+        "alias": "TiposDeLeites",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "1d25c7ef-bcc8-4d4d-91d9-9f9bb4dfe437",
+    "data": [
+      {
+        "text": "adicionar",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "leite integral",
+        "meta": "@TiposDeLeites",
+        "alias": "TiposDeLeites",
+        "userDefined": true
+      },
+      {
+        "text": " na lista de ",
+        "userDefined": false
+      },
+      {
+        "text": "compras",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "5a488d89-e50f-4212-9102-70ecb93adb20",
+    "data": [
+      {
+        "text": "adiciona",
+        "meta": "@adicionaItemLista",
+        "alias": "adicionaItemLista",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "pão",
+        "meta": "@itensListaCompras",
+        "alias": "itenslistacompras",
+        "userDefined": false
+      },
+      {
+        "text": " na lista de ",
+        "userDefined": false
+      },
+      {
+        "text": "compras",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "d24ec2d5-f144-48b1-884f-b580d95b620a",
+    "data": [
+      {
+        "text": "adicionar ",
+        "userDefined": false
+      },
+      {
+        "text": "pão",
+        "meta": "@itensListaCompras",
+        "alias": "itenslistacompras",
+        "userDefined": false
+      },
+      {
+        "text": " à lista de ",
+        "userDefined": false
+      },
+      {
+        "text": "compras",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "32ef3c30-6409-42c1-9152-b88ca40ddf23",
+    "data": [
+      {
+        "text": "adicionar ",
+        "userDefined": false
+      },
+      {
+        "text": "pão",
+        "meta": "@itensListaCompras",
+        "alias": "itenslistacompras",
+        "userDefined": false
+      },
+      {
+        "text": " na lista de ",
+        "userDefined": false
+      },
+      {
+        "text": "compras",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "47c896bc-17c6-4fa8-9b1f-50cc2fd72e75",
+    "data": [
+      {
+        "text": "adicionar na lista de ",
+        "userDefined": false
+      },
+      {
+        "text": "compras",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "pão",
+        "meta": "@itensListaCompras",
+        "alias": "itenslistacompras",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "853ddd56-723f-43cc-848a-f8542055c504",
+    "data": [
+      {
+        "text": "tesla",
+        "meta": "@TeslaAssistente",
+        "alias": "teslaassistente",
+        "userDefined": false
+      },
+      {
+        "text": " colocar na lista de ",
+        "userDefined": false
+      },
+      {
+        "text": "compras",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "pepsi",
+        "meta": "@itensListaCompras",
+        "alias": "itenslistacompras",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]
