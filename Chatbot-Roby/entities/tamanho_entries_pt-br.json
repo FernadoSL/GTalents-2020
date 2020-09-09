@@ -1,0 +1,42 @@
+[
+  {
+    "value": "Tamanho pequeno",
+    "synonyms": [
+      "Tamanho pequeno",
+      "pequeno",
+      "pequenp",
+      "tamanho p",
+      "tamanho P",
+      "p",
+      "P",
+      "pequenos"
+    ]
+  },
+  {
+    "value": "Tamanho médio",
+    "synonyms": [
+      "Tamanhp médio",
+      "medio",
+      "tamanho medio",
+      "tamanho m",
+      "tamanho M",
+      "M",
+      "m",
+      "medios",
+      "médios"
+    ]
+  },
+  {
+    "value": "Tamanho grande",
+    "synonyms": [
+      "Tamanho grande",
+      "grande",
+      "tamanho G",
+      "tamanho grande",
+      "tamanho g",
+      "g",
+      "G",
+      "grandes"
+    ]
+  }
+]

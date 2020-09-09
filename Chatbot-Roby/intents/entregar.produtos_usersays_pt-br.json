@@ -1,0 +1,90 @@
+[
+  {
+    "id": "90cb0fbd-f8e7-410e-a717-8548e910830d",
+    "data": [
+      {
+        "text": "vcs ",
+        "userDefined": false
+      },
+      {
+        "text": "entregam",
+        "meta": "@Entregas",
+        "alias": "Entregas",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "99dced33-21e3-4331-b14a-99d9b57ad2e9",
+    "data": [
+      {
+        "text": "fazem ",
+        "userDefined": false
+      },
+      {
+        "text": "frete",
+        "meta": "@Entregas",
+        "alias": "Entregas",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "eebc3c9c-50d9-4a86-83ec-ed0656d52190",
+    "data": [
+      {
+        "text": "fazem ",
+        "userDefined": false
+      },
+      {
+        "text": "entregas",
+        "meta": "@Entregas",
+        "alias": "Entregas",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "3fac529c-6c6d-4b79-972b-86c670e1d464",
+    "data": [
+      {
+        "text": "vocês ",
+        "userDefined": false
+      },
+      {
+        "text": "entragam",
+        "meta": "@Entregas",
+        "alias": "Entregas",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "id": "ed33c0c0-3765-4d09-9cc1-d310d6d7f478",
+  "name": "entregar.produtos",
+  "auto": true,
+  "contexts": [
+    "Produto-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Produto-followup",
+          "lifespan": 5
+        },
+        {
+          "name": "entregarprodutos-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "6a177c50-206f-4931-a543-7fe165c607de",
+          "name": "Entregas",
+          "required": true,
+          "dataType": "@Entregas",
+          "value": "$Entregas",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Você prefere que entregue ou você vem retirar na loja?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

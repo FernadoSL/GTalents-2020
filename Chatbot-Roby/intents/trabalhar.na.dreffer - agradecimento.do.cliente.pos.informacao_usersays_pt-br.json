@@ -1,0 +1,94 @@
+[
+  {
+    "id": "b5f28b84-d2bd-49f9-b1d0-86483dcfaab0",
+    "data": [
+      {
+        "text": "é nois",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "4c409e50-3918-411f-b4ff-174d8487b380",
+    "data": [
+      {
+        "text": "pode crer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "daf36cf4-2ec2-47ec-9b91-fc947e50f55d",
+    "data": [
+      {
+        "text": "certo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "a3967060-64f2-458c-9a2b-4883d925dbe0",
+    "data": [
+      {
+        "text": "valeu",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "a5a08255-be85-496b-8c8c-01927a1e8248",
+    "data": [
+      {
+        "text": "muito obrigado",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "96f25b5d-3a0d-4b78-9481-4bbd9452428e",
+    "data": [
+      {
+        "text": "obrigado",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "14799f5e-2941-46cb-8e38-256ecba23700",
+    "data": [
+      {
+        "text": "ok",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

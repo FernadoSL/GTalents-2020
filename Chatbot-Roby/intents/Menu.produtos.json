@@ -1,0 +1,119 @@
+{
+  "id": "ad5b98cd-5889-41ee-abe5-5a02d1d80db7",
+  "name": "Menu.produtos",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Produto-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "dd9e38f4-4803-406d-98a8-d9d87cd94a85",
+          "name": "produto",
+          "required": true,
+          "dataType": "@produto",
+          "value": "$produto",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "pt-br",
+              "value": "Qual seria o produto? Temos pregos, parafusos e porcas."
+            },
+            {
+              "lang": "pt-br",
+              "value": "Qual produto você gostaria de comprar?Temos pregos, parafusos e porcas."
+            },
+            {
+              "lang": "pt-br",
+              "value": "Qual produto? Temos pregos, parafusos e porcas."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "579ed006-b5e9-4a28-bb31-13cdbcb16360",
+          "name": "tamanho",
+          "required": true,
+          "dataType": "@tamanho",
+          "value": "$tamanho",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "pt-br",
+              "value": "Temos! qual seria o tamanho? Pequeno, médio ou grande?"
+            },
+            {
+              "lang": "pt-br",
+              "value": "Sim temos! qual o tamanho? Pequeno, médio ou grande?"
+            },
+            {
+              "lang": "pt-br",
+              "value": "Deixa eu ver...Temos! qual o tanhanho? Pequeno, médio ou grande?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "2fdd0c4d-8579-4f42-b468-51505ffca73d",
+          "name": "number",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$number",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "pt-br",
+              "value": "Qual a quantidade?"
+            },
+            {
+              "lang": "pt-br",
+              "value": "Quantos vai querer?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Certo! estou separando aqui pra você, algo mais?",
+            "Ok! Já separei pra você aqui, mais alguma coisa?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "df3ceb7d-ad03-4212-918d-6c769fa65130",
+  "parentId": "1460ccd5-11e6-43a1-8a05-61260640f84f",
+  "rootParentId": "1460ccd5-11e6-43a1-8a05-61260640f84f",
+  "name": "trabalhar.na.dreffer - caso.cliente.pergunte.como.trabalhar.na.drefer",
+  "auto": true,
+  "contexts": [
+    "DefaultIntenoBoasVindas-followup",
+    "trabalharnadreffer-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "trabalharnadreffer.trabalharnadreffer-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "99ca9ab3-e17e-47ca-8675-7c7cd4164fa7",
+          "name": "Curriculo",
+          "required": false,
+          "dataType": "@Curriculo",
+          "value": "$Curriculo",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "É só ir no la em baixo no final do site. Lá tem um e-mail. É só nos mandar por ele."
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

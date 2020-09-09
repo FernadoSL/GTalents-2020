@@ -1,0 +1,87 @@
+[
+  {
+    "id": "701cb93e-793b-4806-a930-954878ba572b",
+    "data": [
+      {
+        "text": "eu ",
+        "userDefined": false
+      },
+      {
+        "text": "forneço",
+        "meta": "@Empresa",
+        "alias": "Empresa",
+        "userDefined": true
+      },
+      {
+        "text": " materiais",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "c90c9823-be75-448d-974a-6e00eed62a1b",
+    "data": [
+      {
+        "text": "sou ",
+        "userDefined": false
+      },
+      {
+        "text": "empresa",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "fornecedora",
+        "meta": "@Empresa",
+        "alias": "Empresa",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "dfb0c0ef-0f14-40b4-9312-5bca4deeb7a3",
+    "data": [
+      {
+        "text": "fornecedor",
+        "meta": "@Empresa",
+        "alias": "Empresa",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "9dd7552c-d2b0-4bf7-a3e4-dd08d11c5099",
+    "data": [
+      {
+        "text": "sou ",
+        "userDefined": false
+      },
+      {
+        "text": "fornecedor",
+        "meta": "@Empresa",
+        "alias": "Empresa",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "5f43e50a-e8da-455a-b285-694403c72330",
+  "name": "Dividas",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

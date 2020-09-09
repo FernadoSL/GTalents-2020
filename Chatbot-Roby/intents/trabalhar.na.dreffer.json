@@ -1,0 +1,61 @@
+{
+  "id": "1460ccd5-11e6-43a1-8a05-61260640f84f",
+  "name": "trabalhar.na.dreffer",
+  "auto": true,
+  "contexts": [
+    "DefaultIntenoBoasVindas-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "DefaultIntenoBoasVindas-followup",
+          "lifespan": 5
+        },
+        {
+          "name": "trabalharnadreffer-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ef415663-6d34-4f30-9b4d-2f5b022722a4",
+          "name": "Trabalhar",
+          "required": false,
+          "dataType": "@Trabalhar",
+          "value": "$Trabalhar",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Pra isso, é necessário nos enviar um e-mail com seu Currículo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

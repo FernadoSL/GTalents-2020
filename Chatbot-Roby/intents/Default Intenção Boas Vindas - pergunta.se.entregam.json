@@ -1,0 +1,47 @@
+{
+  "id": "75738068-a61b-425a-8a65-630c993a0a37",
+  "parentId": "052a1b0f-765e-4534-8507-1ceb135f86d1",
+  "rootParentId": "052a1b0f-765e-4534-8507-1ceb135f86d1",
+  "name": "Default Intenção Boas Vindas - pergunta.se.entregam",
+  "auto": true,
+  "contexts": [
+    "DefaultIntenoBoasVindas-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultIntenoBoasVindas.DefaultIntenoBoasVindas-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Sim entregamos! Mas antes me diga, o que você quer comprar?",
+            "Sim fazemos! Mas antes de fala, qual produto te interessou?"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

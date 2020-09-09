@@ -1,0 +1,47 @@
+{
+  "id": "bba25d29-577d-415b-b1cb-bf56a5de4340",
+  "parentId": "052a1b0f-765e-4534-8507-1ceb135f86d1",
+  "rootParentId": "052a1b0f-765e-4534-8507-1ceb135f86d1",
+  "name": "Default Intenção Boas Vindas - no",
+  "auto": true,
+  "contexts": [
+    "DefaultIntenoBoasVindas-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultIntenoBoasVindas.DefaultIntenoBoasVindas-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Ta certo, até a próxima então!",
+            "Ok, até logo!"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

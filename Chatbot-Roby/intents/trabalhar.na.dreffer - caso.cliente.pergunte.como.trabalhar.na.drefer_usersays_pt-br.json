@@ -1,0 +1,63 @@
+[
+  {
+    "id": "50c48e59-14f4-48e8-b4cc-3e2a310a688e",
+    "data": [
+      {
+        "text": "ta e como eu envio o ",
+        "userDefined": false
+      },
+      {
+        "text": "curriculo",
+        "meta": "@Curriculo",
+        "alias": "Curriculo",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "698c0e96-69cd-4ec5-94d6-b55fed131204",
+    "data": [
+      {
+        "text": "como faço pra enviar o ",
+        "userDefined": false
+      },
+      {
+        "text": "curriculo",
+        "meta": "@Curriculo",
+        "alias": "Curriculo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "cbad47d4-9026-4b18-8987-982946d8336b",
+    "data": [
+      {
+        "text": "e como envio o ",
+        "userDefined": false
+      },
+      {
+        "text": "curriculo",
+        "meta": "@Curriculo",
+        "alias": "Curriculo",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

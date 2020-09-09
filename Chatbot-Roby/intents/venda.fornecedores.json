@@ -1,0 +1,57 @@
+{
+  "id": "d5c3c3fe-ad7a-470e-83a6-c8855222d059",
+  "name": "venda.fornecedores",
+  "auto": true,
+  "contexts": [
+    "DefaultIntenoBoasVindas-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "DefaultIntenoBoasVindas-followup",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "d3f0fe8c-c14f-4078-a074-b2e4b713519f",
+          "name": "Empresa",
+          "required": false,
+          "dataType": "@Empresa",
+          "value": "$Empresa",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Certo, o nossa Gerência de Vendas vai falar com você. Aguarde um momento..."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

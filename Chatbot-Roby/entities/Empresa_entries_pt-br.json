@@ -1,0 +1,24 @@
+[
+  {
+    "value": "Empresa",
+    "synonyms": [
+      "Empresa",
+      "empresa"
+    ]
+  },
+  {
+    "value": "fornecedor",
+    "synonyms": [
+      "fornecedor",
+      "Fornecedor",
+      "faornecedora"
+    ]
+  },
+  {
+    "value": "forneço",
+    "synonyms": [
+      "forneço",
+      "Forneço"
+    ]
+  }
+]

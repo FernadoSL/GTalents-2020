@@ -1,0 +1,103 @@
+[
+  {
+    "id": "17af1075-c513-4f1b-a65b-6ad591be8cfc",
+    "data": [
+      {
+        "text": "retirar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "12b15bf0-7b9a-4b28-9355-c734fdd5c69b",
+    "data": [
+      {
+        "text": "vou pegar ",
+        "userDefined": false
+      },
+      {
+        "text": "na loja",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "ef463c6a-3251-479b-9200-4e91432ba551",
+    "data": [
+      {
+        "text": "vou apanhar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "22b6fdb5-4b47-46e2-befa-4ea82b9b71a5",
+    "data": [
+      {
+        "text": "vo buscar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "1281548b-348f-409c-a07d-33ec620aacb3",
+    "data": [
+      {
+        "text": "vou ai buscar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "c7c0d92f-fb75-4df6-8848-befda3fa9b11",
+    "data": [
+      {
+        "text": "vou buscar",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "950e98f6-16a8-44fa-a41a-b540ee8d74ea",
+    "data": [
+      {
+        "text": "vou retirar em ",
+        "userDefined": false
+      },
+      {
+        "text": "loja",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "0839a53c-42d5-4d30-9666-0b86c3b25a13",
+    "data": [
+      {
+        "text": "achou ou não?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "c7cc44b4-9765-4620-9b41-e23ad23e9ea6",
+    "data": [
+      {
+        "text": "conseguiu ver",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "4eaa71d1-632b-4120-88ec-53d483e01a3d",
+    "data": [
+      {
+        "text": "conseguiu achar?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "8297847d-5a2c-4f52-9ce6-4b7e773a96b4",
+    "data": [
+      {
+        "text": "e ",
+        "userDefined": false
+      },
+      {
+        "text": "ai",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " achou?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]
