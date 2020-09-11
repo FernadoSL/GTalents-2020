@@ -1,0 +1,132 @@
+[
+  {
+    "id": "44c9abcf-5e99-4cad-b7ce-aa5a9d6a57b2",
+    "data": [
+      {
+        "text": "repetir",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "3a6b68da-620f-41b4-954c-eff54e4a6ceb",
+    "data": [
+      {
+        "text": "repita",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "609576f9-471d-490a-9c6b-d224226d1305",
+    "data": [
+      {
+        "text": "repita esses resultados",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "bf4382e7-f7bd-4f1c-b11c-804cf6535faf",
+    "data": [
+      {
+        "text": "você pode repetir isso",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "4251439f-5fca-4e12-b23c-476bd063d3af",
+    "data": [
+      {
+        "text": "faça de novo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "62c6ba0e-51a2-47f1-8187-45f1a2675c58",
+    "data": [
+      {
+        "text": "repete",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "fbda86f9-0a79-4bf2-af66-c968c23fdd71",
+    "data": [
+      {
+        "text": "fale de novo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "6615e4e1-8db7-4a26-8fcf-c7d22c3bfe4c",
+    "data": [
+      {
+        "text": "não entendi",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "311e6d1a-6387-4cd3-8312-404df7cbe4a3",
+    "data": [
+      {
+        "text": "repita o que acabou de dizer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "d274c4ea-aa22-473b-be66-b88b53951977",
+    "data": [
+      {
+        "text": "diga a mesma coisa de novo",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

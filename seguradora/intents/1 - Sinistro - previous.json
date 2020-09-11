@@ -1,0 +1,54 @@
+{
+  "id": "fbbff73e-f0ec-4402-8c37-bc742b963fe7",
+  "parentId": "edf7cb57-52ef-4fd6-8592-7247f8692cc6",
+  "rootParentId": "edf7cb57-52ef-4fd6-8592-7247f8692cc6",
+  "name": "1 - Sinistro - previous",
+  "auto": true,
+  "contexts": [
+    "1-Sinistro-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "1-Sinistro.1-Sinistro-previous",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "18a11950-4c52-4311-b255-7c13ffccde9b",
+          "name": "menu",
+          "required": true,
+          "dataType": "@menu",
+          "value": "$menu",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "retornando ao menu"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

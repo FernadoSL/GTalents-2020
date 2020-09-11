@@ -1,0 +1,65 @@
+{
+  "id": "edf7cb57-52ef-4fd6-8592-7247f8692cc6",
+  "name": "1 - Sinistro",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "1-Sinistro-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "72910d47-8f1c-430c-b514-7a27cc13d367",
+          "name": "sinistro",
+          "required": true,
+          "dataType": "@SINISTRO",
+          "value": "$sinistro",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "você deseja ATIVAR SINISTRO?"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "ou Deseja VOLTA ao menu de opções?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

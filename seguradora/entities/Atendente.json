@@ -1,0 +1,9 @@
+{
+  "id": "6ed0aa3f-e00a-4d35-bfb8-7c3e2b822434",
+  "name": "Atendente",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

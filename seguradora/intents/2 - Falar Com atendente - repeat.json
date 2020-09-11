@@ -1,0 +1,36 @@
+{
+  "id": "e6c4eeb8-dd74-4151-8f94-9e9f4db8f428",
+  "parentId": "8ccbc42e-fb78-4fa6-8fde-e687cec7aee2",
+  "rootParentId": "8ccbc42e-fb78-4fa6-8fde-e687cec7aee2",
+  "name": "2 - Falar Com atendente - repeat",
+  "auto": true,
+  "contexts": [
+    "2-FalarComatendente-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "2-FalarComatendente.2-FalarComatendente-repeat",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

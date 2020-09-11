@@ -1,0 +1,39 @@
+{
+  "id": "df1a2f39-b757-4885-9299-6f25f84fabce",
+  "parentId": "b475dc49-ead1-4ae2-b9d6-1198b9da951b",
+  "rootParentId": "b475dc49-ead1-4ae2-b9d6-1198b9da951b",
+  "name": "assegurado - Nao",
+  "auto": true,
+  "contexts": [
+    "DefaultWelcomeIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "DefaultWelcomeIntent.DefaultWelcomeIntent-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "então Gostaria de Fazer?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
