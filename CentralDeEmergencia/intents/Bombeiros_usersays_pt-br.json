@@ -1,0 +1,53 @@
+[
+  {
+    "id": "195d9c0d-997d-4cfb-a53b-ab7332403222",
+    "data": [
+      {
+        "text": "3",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "16032573-5b95-41c1-89b5-645ea1dae53f",
+    "data": [
+      {
+        "text": "3",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " - ",
+        "userDefined": false
+      },
+      {
+        "text": "bombeiros",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "4c716650-0c9b-4ac3-bdb2-988fa2986a73",
+    "data": [
+      {
+        "text": "bombeiros",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]

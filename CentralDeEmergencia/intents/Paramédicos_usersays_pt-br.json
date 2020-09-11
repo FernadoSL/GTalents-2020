@@ -1,0 +1,58 @@
+[
+  {
+    "id": "a89499cb-005c-40a2-a269-3f96afc8c40b",
+    "data": [
+      {
+        "text": "2",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "ac5ed664-cabf-4d8a-82af-aba09dc8d32d",
+    "data": [
+      {
+        "text": "papamedicos",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "ae307bb4-9a7d-4794-b154-aef9d5b74a8f",
+    "data": [
+      {
+        "text": "paramedicos",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  },
+  {
+    "id": "d4af69bd-bbc5-493b-9bfe-2687732b8ff6",
+    "data": [
+      {
+        "text": "2 - PARAMÉDICOS",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "pt-br",
+    "updated": 0
+  }
+]
