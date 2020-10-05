@@ -1,9 +1,0 @@
-{
-  "id": "d203e366-b8aa-4d05-9093-0b80ce5d4593",
-  "name": "TiposDeLeites",
-  "isOverridable": true,
-  "isEnum": false,
-  "isRegexp": false,
-  "automatedExpansion": false,
-  "allowFuzzyExtraction": true
-}

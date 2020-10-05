@@ -1,9 +1,0 @@
-{
-  "id": "16981cea-7057-4bc5-bf37-6e7f9fb240dc",
-  "name": "TeslaAssistente",
-  "isOverridable": true,
-  "isEnum": false,
-  "isRegexp": false,
-  "automatedExpansion": false,
-  "allowFuzzyExtraction": true
-}
