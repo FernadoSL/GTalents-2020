@@ -17,6 +17,7 @@ Para fazer o deploy das aplicações que serão os nossos webhooks temos soluç�
 
 #### Referências e Links
 - https://cloud.google.com/dialogflow/es/docs/fulfillment-webhook?hl=pt-br
+- https://cloud.google.com/dialogflow/es/docs/reference/rpc/google.cloud.dialogflow.v2?hl=pt-br#google.cloud.dialogflow.v2.Intent.Message
 - https://nodejs.org/pt-br/
 - https://www.heroku.com/
 - https://expressjs.com/pt-br/starter/hello-world.html
