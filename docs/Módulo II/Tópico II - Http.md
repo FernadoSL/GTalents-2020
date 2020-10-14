@@ -12,3 +12,9 @@ link para estudo:
 
 Para realizar o papel de cliente executar requisições uma ferramenta bastante utilizada é o o Postman, segue o link para download: 
 - https://www.postman.com/downloads/
+
+http response - status code:
+- https://httpstatuses.com/
+
+open api's repo:
+- https://github.com/public-apis/public-apis
