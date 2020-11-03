@@ -1,11 +1,11 @@
 // import dos pacote
 import { json } from 'body-parser';
 import express, { response } from 'express';
+import NumberService from "./numberService.js";
 const app = express();
 app.use(json());
 
-// declaração da lista
-var numberList = [];
+var numberService = new NumberService();
 
 function getNumberFromRequest(request) {
     var data = request.body;
@@ -24,7 +24,7 @@ function createResponse(response, message, statusCode) {
 }
 
 app.get('/', (request, response) => {
-    response.json(numberList);
+    response.json(numberService.getList());
 })
 
 app.post('/', (request, response) => {
@@ -34,7 +34,7 @@ app.post('/', (request, response) => {
     if (isNaN(numberToAdd)) {
         createResponse(response, numberToAdd + " Is not a number", 400);
     } else {
-        numberList.push(numberToAdd);
+        numberService.addNumber(numberToAdd);
         createResponse(response, "Number " + numberToAdd + " added...");
     }
 })
@@ -42,10 +42,9 @@ app.post('/', (request, response) => {
 app.delete('/', (request, response) => {
 
     var numberToDelete = getNumberFromRequest(request);
-    var index = numberList.indexOf(numberToDelete);
+    var isDeleted = numberService.deleteNumber(numberToDelete);
 
-    if (index > -1) {
-        numberList.splice(index, 1);
+    if (isDeleted) {
         createResponse(response, "Number " + numberToDelete + " deleted...");
     }
     else {
