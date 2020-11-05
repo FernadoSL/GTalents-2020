@@ -1,11 +1,13 @@
 // import dos pacote
 import { json } from 'body-parser';
-import express, { response } from 'express';
+import express, { request, response } from 'express';
 import NumberService from "./numberService.js";
+import CustomerService from "./customerService.js";
 const app = express();
 app.use(json());
 
 var numberService = new NumberService();
+var customerService = new CustomerService();
 
 // obtem o numero da solicitação
 function getNumberFromRequest(request) {
@@ -52,6 +54,25 @@ app.delete('/', (request, response) => {
         createResponse(response, numberToDelete + " number not found", 400);
     }
 })
+
+app.get('/customer', (request, response) => {
+    var result = customerService.getCustomers();
+    response.json(result);
+})
+
+app.post('/customer', (request, response) => {
+
+    console.log(request.body);
+    
+    var name = request.body.name;
+    var age = request.body.age;
+    var email = request.body.email;
+    console.log(name + " " + age + " " + email)
+
+    customerService.addCustomer(name, age, email);
+    response.send("Customer Adicionado")
+})
+
 
 app.post('/webhook', (request, response) => {
 
