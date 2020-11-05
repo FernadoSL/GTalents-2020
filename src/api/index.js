@@ -7,6 +7,7 @@ app.use(json());
 
 var numberService = new NumberService();
 
+// obtem o numero da solicitação
 function getNumberFromRequest(request) {
     var data = request.body;
     var number = data.number;
@@ -76,6 +77,8 @@ app.post('/webhook', (request, response) => {
     };
 
     response.json(responseData)
+
+    
 })
 
 var port = 4200
