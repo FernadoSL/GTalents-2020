@@ -76,15 +76,16 @@ app.post('/webhook', (request, response) => {
 
     // amrazenando o corpo da requisição que o dialogflow fez
     var data = request.body;
-    console.log(data);
 
     // armazenando o nome da intenção em que o dialogflow caiu
     var intentName = data.queryResult.intent.displayName;
-    console.log(intentName);
 
-    // armazenando o nome do contexto de saída
-    var context = data.queryResult.outputContexts[0].name;
-    console.log(context);
+    if (intentName == 'GetNome') {
+        var parameters = data.queryResult.parameters;
+        var name = parameters.person.name;
+
+        customerService.addCustomer(name, 66, "teste@teste.com")
+    }
 
     // armazenando o que o usuário digitou 
     var text = data.queryResult.queryText;
