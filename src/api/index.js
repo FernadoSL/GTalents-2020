@@ -1,15 +1,14 @@
-// import dos pacote
-import { json } from 'body-parser';
-import express, { request, response } from 'express';
+import json from 'body-parser';
+import express from 'express';
 import NumberService from "./numberService.js";
 import CustomerService from "./customerService.js";
+
 const app = express();
 app.use(json());
 
 var numberService = new NumberService();
 var customerService = new CustomerService();
 
-// obtem o numero da solicitação
 function getNumberFromRequest(request) {
     var data = request.body;
     var number = data.number;
@@ -73,7 +72,6 @@ app.post('/customer', (request, response) => {
     response.send("Customer Adicionado")
 })
 
-
 app.post('/webhook', (request, response) => {
 
     // amrazenando o corpo da requisição que o dialogflow fez
@@ -98,8 +96,6 @@ app.post('/webhook', (request, response) => {
     };
 
     response.json(responseData)
-
-    
 })
 
 var port = 4200

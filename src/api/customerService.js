@@ -1,5 +1,3 @@
-import { request } from "express";
-
 export default class CustomerService {
 
     constructor(){
