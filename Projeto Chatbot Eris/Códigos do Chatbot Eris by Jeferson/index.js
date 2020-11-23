@@ -2,7 +2,6 @@
 import json from 'body-parser';
 import express from 'express';
 import CustomerService from "./customerService.js";
-import FruitService from ".fruitService.js";
 
 const app = express();
 app.use(json());
@@ -23,13 +22,10 @@ app.post('/webhook', (request, response) => {
     console.log(data);
 
     // intents
-    var intentAjudaUsuario = data.queryResult.intent.displayName;
-    var intentListaCarrinho = data.queryResult.intent.displayName;
-    var intentCadastroNomeCPF = data.queryResult.intent.displayName;
-    var intentCheckCpf = data.queryResult.intent.displayName;
+    var nomeIntencao = data.queryResult.intent.displayName;
 
     //intent onde o usuário pergunta "em que pode me ajudar"
-    if(intentAjudaUsuario == 'IntentAjudaUsuario'){
+    if(nomeIntencao == 'IntentAjudaUsuario'){
 
         var text = data.queryResult.queryText;
         text = 'ajuda', 'ajudar';
@@ -43,25 +39,37 @@ app.post('/webhook', (request, response) => {
     }
 
     //intent onde o usuário pergunta sobre seu carrinho de compras
-    if(intentListaCarrinho == 'IntentListaCarrinho'){
+    if(nomeIntencao == 'IntentListaCarrinho'){
         var parametros = data.queryResult.parameters;
         parametros = 'listaCompras';
+        
+        var listaCompras = customerService.clienteLogado.listaCompras;
+        var listaString = "";
+        for (let i = 0; i < listaCompras.length; i++) {
+            listaString = listaCompras + ", ";
+        }
+        
+        // var responseData =
+        // {
+        //     fulfillmentMessages: [{ text: { text: ["Certo antes de ver o que tem no seu carrinho, pode me dizer o seu CPF?(webhook)"] } }]
+        // };
 
         var responseData =
         {
-            fulfillmentMessages: [{ text: { text: ["Certo antes de ver o que tem no seu carrinho, pode me dizer o seu CPF?(webhook)"] } }]
+            fulfillmentMessages: [{ text: { text: ["Sua lista de compras: " + listaString] } }]
         };
     
         response.json(responseData)
     }
     //intent que verifica se o usuário é cadastrado ou não
-    if(intentCheckCpf == 'IntentcheckCPF'){
+    if(nomeIntencao == 'IntentcheckCPF') {
 
-        customerService.checkCostumer()
+        var cpf = data.queryResult.queryText.parameters.number;
+        customerService.checkCostumer(cpf);
     }
 
     //intent de cadastro de nome e cpf
-    if(intentCadastroNomeCPF == 'IntentCadastroNomeCPF'){
+    if(nomeIntencao == 'IntentCadastroNomeCPF'){
         var parameters = data.queryResult.parameters;
         var name = parameters.person.name;
         var number = parameters.number;
@@ -74,6 +82,10 @@ app.post('/webhook', (request, response) => {
         };
     
         response.json(responseData)
+    }
+
+    if (nomeIntencao == "AdicionaCompra" && customerService.loginFeito) {
+        customerService.clienteLogado.adiciona("nova compra");
     }
    
 })

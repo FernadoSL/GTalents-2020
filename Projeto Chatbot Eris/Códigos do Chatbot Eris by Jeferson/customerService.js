@@ -1,21 +1,23 @@
 export default class CustomerService {
 
     constructor(){
-        this.customerList = [];
+        this.listaClientes = [];
+        this.clienteLogado = {};
+        this.loginFeito = false;
     }
 
     getCustomers() {
         return this.customerList;
     }
 
-    checkCostumer(){
+    checkCostumer(cpf) {
+        for (let i = 0; i < this.listaClientes.length; i++) {
+            var cliente = this.listaClientes[i];
 
-        //armazena o que o cliente digitou (no caso o parametro é número)
-        var numCpf = data.queryResult.queryText.parameters.number;
-    
-        //
-        for(numCpf of this.custumerList[number]){
-               
+            if (cliente.cpf == cpf) {
+                this.clienteLogado = cliente;
+                this.loginFeito = true;
+            }
         }
     }
     
@@ -34,6 +36,6 @@ export default class CustomerService {
 class Customer {
     constructor(name, number) {
         this.name = name;
-        this.number = number;            
+        this.cpf = number;            
     }
 }
