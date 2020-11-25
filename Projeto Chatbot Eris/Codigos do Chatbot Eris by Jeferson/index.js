@@ -2,7 +2,7 @@
 import json from 'body-parser';
 import express from 'express';
 import ClienteServico from "./clienteServico.js";
-import Cliente from "./cliente.js";
+import Cliente from "./cliente.js" 
 
 const app = express();
 app.use(json());
@@ -34,7 +34,7 @@ app.post('/webhook', (request, response) => {
 
         var listaCompras = clienteServico.clienteLogado.listaCompras;
         var listaString = "";
-        for (let i = 0; i < listaCompras.length; i++) {
+        for (let i = 0; i < cliente.listaCompras.length; i++) {
             listaString = listaCompras + ", ";
         }
 
@@ -44,7 +44,7 @@ app.post('/webhook', (request, response) => {
             };
         response.json(responseData)
     
-    }else if(nomeIntencao == 'IntentListaCarrinho' != clienteServico.clienteLogado){
+    }else if(nomeIntencao == 'IntentListaCarrinho' && !clienteServico.clienteLogado){
         var responseData =
             {
                 fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de compras digite seu CPF."] } }]
