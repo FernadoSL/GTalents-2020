@@ -26,9 +26,11 @@ app.post('/webhook', (request, response) => {
     // intents
     var nomeIntencao = data.queryResult.intent.displayName;
 
+    
     //intent carrinho de compras
     if(nomeIntencao == 'IntentListaCarrinho' && clienteServico.clienteLogado){
-        //quando o usuário digitar lista de compras 
+        //quando o usuário digitar lista de compras
+        
         var parametros = data.queryResult.parameters;
         parametros = 'listaCompras';
 
@@ -45,19 +47,20 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
     
     }else if(nomeIntencao == 'IntentListaCarrinho' && !clienteServico.clienteLogado){
+    
         var responseData =
             {
                 fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de compras digite seu CPF."] } }]
             };
         response.json(responseData)
     }
+    console.log(clienteServico.clienteLogado);
 
     //intent que verifica se o usuário é cadastrado ou não
     if(nomeIntencao == 'IntentcheckCPF'){
 
-        var cpf = data.queryResult.queryText.parameters.number;
+        var cpf = data.queryResult.queryText.parameters;
         clienteServico.checkCliente(cpf);
-
     }
 
     if(nomeIntencao == 'IntentAdicionaCarrinho' && clienteServico.loginFeito){

@@ -4,7 +4,7 @@ export default class ClienteServico {
 
     constructor(){
         this.listaClientes = [];
-        this.clienteLogado = {};
+        this.clienteLogado = false;
         this.loginFeito = false;
     }
 
@@ -13,22 +13,26 @@ export default class ClienteServico {
     }
 
     checkCliente(cpf){
+
         for (let i = 0; i < this.listaClientes.length; i++) {
             var cliente = this.listaClientes[i];
-
+            
             if (cliente.cpf == cpf) {
                 this.clienteLogado = cliente;
                 this.loginFeito = true;
-            }
+            }    
+        }
+
+        if(!this.loginFeito){
+            this.addCliente(cpf);
         }
     }
     
-    addCliente(name, number) {
-        
-        // cria um customer com os dados
-        var cliente = new Cliente(name, number);
+    addCliente(number) { 
+        // cria um cliente com os dados nome e numero
+        var cliente = new Cliente(number);
 
-        // adiciona o customer na lista
+        // adiciona o cliente na lista
         this.listaClientes.push(cliente);
     }
 
