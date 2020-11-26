@@ -29,6 +29,7 @@ export default class ClienteServico {
     }
     
     addCliente(number) { 
+        
         // cria um cliente com os dados numero
         var cliente = new Cliente(number);
 

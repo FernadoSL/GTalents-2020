@@ -36,6 +36,7 @@ app.post('/webhook', (request, response) => {
 
         var listaCompras = clienteServico.clienteLogado.listaCompras;
         var listaString = "";
+               
         for (let i = 0; i < cliente.listaCompras.length; i++) {
             listaString = listaCompras + ", ";
         }
@@ -54,6 +55,45 @@ app.post('/webhook', (request, response) => {
             };
         response.json(responseData)
     }
+
+    // intente Lista de Atividades 
+    if(nomeIntencao == 'ListaDeAtividade' && clienteServico.clienteLogado){
+        
+        var parametros = data.queryResult.parameters;
+        parametros = 'ListaDeAtividade';
+
+        // chamar apenas a lita com as atividades
+        var listaDeAtividade = clienteServico.clienteLogado.listaDeAtividade;
+        var listaString = "";
+
+        for (let i = 0; i < cliente.listaAividades.length; i++) {
+            listaString = listaDeAtividade + ", ";
+        }
+
+        var responseData =
+            {
+                fulfillmentMessages: [{ text: { text: ["Essa é a sua lista de atividades: " + listaString] } }]
+            };
+        response.json(responseData)
+    
+    }else if(nomeIntencao == 'IntentListaCarrinho' && !clienteServico.clienteLogado){
+
+        var responseData =
+            {
+                fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de compras digite seu CPF."] } }]
+            };
+        response.json(responseData)
+    }
+
+
+
+
+
+
+
+
+
+
 
     //intent que verifica se o usuário é cadastrado ou não
     if(nomeIntencao == 'IntentcheckCPF'){

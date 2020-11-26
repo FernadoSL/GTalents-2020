@@ -31,10 +31,11 @@ export default class Cliente {
         
         var atividade = new Atividades(titulo, data, hora); 
         this.listaAividades.push(atividade);
-    }
+    }      
+
+
+
+
 
     
-
-
-
 }
