@@ -2,13 +2,13 @@
 import json from 'body-parser';
 import express from 'express';
 import ClienteServico from "./clienteServico.js";
-import Cliente from "./cliente.js" 
+import Cliente from "./cliente.js"
+import Mercado from "./mercado.js"
 
 const app = express();
 app.use(json());
 
 var clienteServico = new ClienteServico();
-var cliente = new Cliente();
 
 
 app.get('/webhook', (request, response) => {
@@ -27,17 +27,17 @@ app.post('/webhook', (request, response) => {
     // intents
     var nomeIntencao = data.queryResult.intent.displayName;
 
-    
+    console.log(clienteServico.loginFeito);
     //intent carrinho de compras
+<<<<<<< HEAD
     if(nomeIntencao == 'IntentListaCarrinho' && clienteServico.clienteLogado){
+=======
+    if(nomeIntencao == 'IntentListaCarrinho' && clienteServico.loginFeito){
+>>>>>>> c7ef36794d508a8a31b93ff647c45ee24fdf8e0d
         
-        var parametros = data.queryResult.parameters;
-        parametros = 'listaCompras';
-
-        var listaCompras = clienteServico.clienteLogado.listaCompras;
         var listaString = "";
-        for (let i = 0; i < cliente.listaCompras.length; i++) {
-            listaString = listaCompras + ", ";
+        for (let i = 0; i < clienteServico.clienteLogado.listaCompras.length; i++) {
+            listaString = listaString + clienteServico.clienteLogado.listaCompras[i].name + ", ";
         }
 
         var responseData =
@@ -46,7 +46,13 @@ app.post('/webhook', (request, response) => {
             };
         response.json(responseData)
     
+<<<<<<< HEAD
     }else if(nomeIntencao == 'IntentListaCarrinho' && !clienteServico.clienteLogado){
+=======
+    }else if(nomeIntencao == 'IntentListaCarrinho' && !clienteServico.loginFeito){
+        var parametros = data.queryResult.parameters;
+        parametros = 'listaCompras';
+>>>>>>> c7ef36794d508a8a31b93ff647c45ee24fdf8e0d
 
         var responseData =
             {
@@ -58,9 +64,13 @@ app.post('/webhook', (request, response) => {
     //intent que verifica se o usuário é cadastrado ou não
     if(nomeIntencao == 'IntentcheckCPF'){
 
-        var cpf = data.queryResult.queryText.parameters;
+        var cpf = data.queryResult.parameters.number;
         clienteServico.checkCliente(cpf);
+<<<<<<< HEAD
 
+=======
+        console.log(cpf);
+>>>>>>> c7ef36794d508a8a31b93ff647c45ee24fdf8e0d
         var responseData =
             {
                 fulfillmentMessages: [{ text: { text: ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras novamente digite 'minha lista de compras'."] } }]
@@ -68,11 +78,24 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
     }
 
+
     if(nomeIntencao == 'IntentAdicionaCarrinho' && clienteServico.loginFeito){
+<<<<<<< HEAD
         var addItensCarrinho = data.queryResult.queryText.parameters;
         var name = addItensCarrinho.name;
         var price = addItensCarrinho.price;
         cliente.addCarrinho(name,price);
+=======
+        var addItensCarrinho = data.queryResult.parameters.Produto;
+
+        clienteServico.clienteLogado.addCarrinho(addItensCarrinho);
+        var responseData =
+            {
+                fulfillmentMessages: [{ text: { text: ["Item adicionado na lista de compras"] } }]
+            };
+        response.json(responseData)
+
+>>>>>>> c7ef36794d508a8a31b93ff647c45ee24fdf8e0d
     }
     
 
@@ -80,13 +103,22 @@ app.post('/webhook', (request, response) => {
 
 app.delete('/webhook', (request, response) => {
     var data = request.body;
+<<<<<<< HEAD
 
     if(nomeIntencao == 'IntentDeletadoCarrinho')
         var deleteItensCarrinho = data.queryResult.queryText.parameters;
         var deletarNome = deleteItensCarrinho.name;
         var deletarPreco = deleteItensCarrinho.price;
         cliente.deleteCarrinho(deletarNome, deletarPreco);
+=======
+>>>>>>> c7ef36794d508a8a31b93ff647c45ee24fdf8e0d
 
+    if(nomeIntencao == 'IntentDeletadoCarrinho'){
+        var deleteItensCarrinho = data.queryResult.queryText.parameters;
+        var deletarNome = deleteItensCarrinho.name;
+        var deletarPreco = deleteItensCarrinho.price;
+        cliente.deleteCarrinho(deletarNome, deletarPreco);
+    }
 })
 
 
