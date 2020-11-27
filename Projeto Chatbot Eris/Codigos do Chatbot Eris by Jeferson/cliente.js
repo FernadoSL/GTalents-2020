@@ -17,7 +17,7 @@ export default class Cliente {
         var index = this.listaCompras.indexOf(name)
         
         if(index > -1){
-            this.listaCompras.splice(index, 1) 
+            this.listaCompras.splice(index, 0)
         }
         
     } 

@@ -26,7 +26,7 @@ app.post('/webhook', (request, response) => {
     // intents
     var nomeIntencao = data.queryResult.intent.displayName;
 
-    console.log(clienteServico.loginFeito);
+
     //intent carrinho de compras
     if(nomeIntencao == 'IntentListaCarrinho' && clienteServico.loginFeito){
         
@@ -34,9 +34,10 @@ app.post('/webhook', (request, response) => {
         for (let i = 0; i < clienteServico.clienteLogado.listaCompras.length; i++) {
             listaString = listaString + clienteServico.clienteLogado.listaCompras[i].name + ", ";
         }
-
+        
         var responseData =
             {
+                
                 fulfillmentMessages: [{ text: { text: ["Sua lista de compras:  " + listaString] } }]
             };
         response.json(responseData)
@@ -68,7 +69,7 @@ app.post('/webhook', (request, response) => {
 
     if(nomeIntencao == 'IntentAdicionaCarrinho' && clienteServico.loginFeito){
         var addItensCarrinho = data.queryResult.parameters.Produto;
-
+        
         clienteServico.clienteLogado.addCarrinho(addItensCarrinho);
         var responseData =
             {
@@ -77,17 +78,12 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
 
     }
-    
-
-})
-
-app.delete('/webhook', (request, response) => {
-    var data = request.body;
-
+    console.log(deleteItensCarrinho)
     if(nomeIntencao == 'IntentDeletadoCarrinho' && clienteServico.loginFeito){
 
-        var deleteItensCarrinho = data.queryResult.parameters.listaCompras;
-       
+        
+        var deleteItensCarrinho = data.queryResult.parameters.Produto;
+        
         clienteServico.clienteLogado.deleteCarrinho(deleteItensCarrinho);
 
         var responseData =
@@ -96,6 +92,7 @@ app.delete('/webhook', (request, response) => {
             };
         response.json(responseData)
     }
+
 })
 
 
