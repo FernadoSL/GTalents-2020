@@ -23,7 +23,7 @@ app.post('/webhook', (request, response) => {
     var data = request.body;
     console.log(data);
 
-    // intents
+    // intents xbox series x ta muito caro
     var nomeIntencao = data.queryResult.intent.displayName;
 
 
