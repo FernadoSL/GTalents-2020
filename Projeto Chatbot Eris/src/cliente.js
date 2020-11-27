@@ -13,12 +13,31 @@ export default class Cliente {
         this.listaCompras.push(mercado)
     }
 
-    deleteCarrinho(name){
+    deleteCarrinho(nomeUsuarioDigitou){ // parametro digitado pelo usuario
 
-        var index = this.listaCompras.indexOf(name)
+        // lista de string
+        // ['cebola', 'batata', 'feijao']
+
+        // lista de objetos
+        // [{ name: 'cebola' }, { name: 'batata' }, { name: 'feijao' }]
+
+        var a = this.listaCompras[0]
+        // a = 'cebola'
+        // a = { name: 'cebola' }
         
-        if(index > -1){
-            this.listaCompras.splice(index, 0)
+        var ceb = a.name;
+        //ceb = 'cebola'
+
+        var indiceParaDeletar = -1;
+        for (let indice = 0; indice < this.listaCompras.length; indice++) {
+            var produto = this.listaCompras[indice];
+            if (produto.name == nomeUsuarioDigitou) {
+                indiceParaDeletar = indice;
+            }
+        }
+        
+        if(indiceParaDeletar > -1){
+            this.listaCompras.splice(indiceParaDeletar, 0)
         }
         
     }
