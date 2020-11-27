@@ -20,21 +20,24 @@ export default class ClienteServico {
             if (cliente.cpf == cpf) {
                 this.clienteLogado = cliente;
                 this.loginFeito = true;
-            }    
+            }
         }
 
         if(!this.loginFeito){
-            this.addCliente(cpf);
+
+            var novoCliente = this.addCliente(cpf);
+            this.loginFeito = true;
+            this.clienteLogado = novoCliente;
         }
     }
     
     addCliente(number) { 
-        
         // cria um cliente com os dados numero
         var cliente = new Cliente(number);
 
         // adiciona o cliente na lista
         this.listaClientes.push(cliente);
+        return cliente;
     }
 
 }

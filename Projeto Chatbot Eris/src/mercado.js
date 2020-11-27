@@ -1,6 +1,6 @@
 export default class Mercado {
-    constructor(name, price){
+    constructor(name){
         this.name = name;
-        this.price = price;
+        
     }
 }
