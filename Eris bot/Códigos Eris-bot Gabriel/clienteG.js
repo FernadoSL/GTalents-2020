@@ -1,9 +1,13 @@
 import Mercado from "./mercado.js"
+import Atividades from "./atividade"
+
 
 export default class Cliente {
     constructor(number) {
+
         this.cpf = number;
         this.listaCompras = [];
+        this.listaAividades = [];
     }
 
     addCarrinho = function(name,price){
@@ -22,5 +26,16 @@ export default class Cliente {
         }
         
     } 
+    
+    addAtividades = function(titulo, data, hora){
+        
+        var atividade = new Atividades(titulo, data, hora); 
+        this.listaAividades.push(atividade);
+    }      
+
+
+
+
+
     
 }
