@@ -42,6 +42,8 @@ app.post('/webhook', (request, response) => {
     if(nomeIntencao == 'IntentListaCarrinho'){
         var parametros = data.queryResult.parameters;
         parametros = 'listaCompras';
+
+        var soma = 1 + 1;
         
         var listaCompras = customerService.clienteLogado.listaCompras;
         var listaString = "";
