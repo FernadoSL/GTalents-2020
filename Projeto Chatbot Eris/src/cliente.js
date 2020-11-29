@@ -47,7 +47,7 @@ export default class Cliente {
     addAtividades = function(name){
         
         var atividades = new Atividades(name); 
-        this.listaAividades.push(atividades);
+        this.listaAividades.push(atividades)
     }
 
     /*deleteAtividade(NomeAtividade){
