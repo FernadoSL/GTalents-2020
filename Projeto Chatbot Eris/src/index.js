@@ -123,14 +123,14 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
     }
        
-    // itent adiciona carrinho
+    // itent adiciona lista de atividades
     if(nomeIntencao == 'AdicionaEventoListaDeTarefa' && clienteServico.loginFeito){
-        var addItensCarrinho = data.queryResult.parameters.Produto;
+        var addEvento = data.queryResult.parameters.Produto;
         
-        clienteServico.clienteLogado.addCarrinho(addItensCarrinho);
+        clienteServico.clienteLogado.addAtividades(addEvento);
         var responseData =
             {
-                fulfillmentMessages: [{ text: { text: [addItensCarrinho + " adicionado na lista de compras!"] } }]
+                fulfillmentMessages: [{ text: { text: [addEvento + " Ativedade adicionada com sucesso!"] } }]
             };
         response.json(responseData)
 
