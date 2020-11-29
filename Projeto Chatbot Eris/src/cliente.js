@@ -1,10 +1,12 @@
+import Atividades from "./atividade.js";
 import Mercado from "./mercado.js"
+import Atividades from "./atividade.js"
 
 export default class Cliente {
     constructor(number) {
         this.cpf = number;
         this.listaCompras = [];
-        this.listaAividades = [];
+        this.listaAtividades = [];
     }
 
     addCarrinho = function (name){
@@ -42,13 +44,13 @@ export default class Cliente {
         
     }
     
-    addAtividades = function(titulo, data, hora){
+    addAtividades = function(name){
         
-        var atividade = new Atividades(titulo, data, hora); 
-        this.listaAividades.push(atividade);
+        var atividades = new Atividades(name); 
+        this.listaAividades.push(atividades);
     }
 
-    deleteAtividade(NomeAtividade){
+    /*deleteAtividade(NomeAtividade){
         var evento = this.listaAividades[0];
         var nomeDoEvento = evento.titulo;
                 
@@ -65,5 +67,5 @@ export default class Cliente {
             this.listaAividades.splice(indiceParaDeletar, 0);
         }
 
-    }
+    }*/
 }

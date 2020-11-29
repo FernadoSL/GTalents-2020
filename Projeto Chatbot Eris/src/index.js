@@ -2,8 +2,6 @@
 import json from 'body-parser';
 import express from 'express';
 import ClienteServico from "./clienteServico.js";
-import Cliente from "./cliente.js"
-import Mercado from "./mercado.js"
 
 const app = express();
 app.use(json());
@@ -23,11 +21,7 @@ app.post('/webhook', (request, response) => {
     var data = request.body;
     console.log(data);
 
-    // intents xbox series x ta muito caro
-    // intents
-    // outro comentario
     var nomeIntencao = data.queryResult.intent.displayName;
-
 
     //intent carrinho de compras
     if(nomeIntencao == 'IntentListaCarrinho' && clienteServico.loginFeito){
@@ -68,7 +62,7 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
     }
 
-    // itent adiciona carrinho
+    // itent para adicionar itens no carrinho
     if(nomeIntencao == 'IntentAdicionaCarrinho' && clienteServico.loginFeito){
         var addItensCarrinho = data.queryResult.parameters.Produto;
         
@@ -81,8 +75,7 @@ app.post('/webhook', (request, response) => {
 
     }
 
-    // intent deleta carrinho
-    console.log(deleteItensCarrinho)
+    // intent para deletar itens do carrinho
     if(nomeIntencao == 'IntentDeletadoCarrinho' && clienteServico.loginFeito){
 
         
@@ -97,12 +90,12 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
     }
 
-    // intente Lista de Atividades 
-    if(nomeIntencao == 'ListaAtividade' && clienteServico.loginFeito){
+    // intent lista de Atividades 
+    if(nomeIntencao == 'IntentListaAtividades' && clienteServico.loginFeito){
         
         var listaString = "";
-        for (let i = 0; i < clienteServico.clienteLogado.listaAtividade.length; i++) {
-            listaString = listaString + clienteServico.clienteLogado.listaAtividade[i].name + ", ";
+        for (let i = 0; i < clienteServico.clienteLogado.listaAtividades.length; i++) {
+            listaString = listaString + clienteServico.clienteLogado.listaAtividades[i].name + ", ";
         }
         
         var responseData =
@@ -112,9 +105,9 @@ app.post('/webhook', (request, response) => {
             };
         response.json(responseData)
     
-    }else if(nomeIntencao == 'ListaAtividade' && !clienteServico.loginFeito){
+    }else if(nomeIntencao == 'IntentListaAtividades' && !clienteServico.loginFeito){
         var parametros = data.queryResult.parameters;
-        parametros = 'listaAtividade';
+        parametros = 'ListaAtividades';
 
         var responseData =
             {
@@ -123,8 +116,8 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
     }
        
-    // itent adiciona lista de atividades
-    if(nomeIntencao == 'AdicionaEventoListaDeTarefa' && clienteServico.loginFeito){
+    // intent adiciona lista de atividades
+    if(nomeIntencao == 'IntentAdicionaAtividade' && clienteServico.loginFeito){
         var addEvento = data.queryResult.parameters.Produto;
         
         clienteServico.clienteLogado.addAtividades(addEvento);
