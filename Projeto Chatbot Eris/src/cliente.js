@@ -47,4 +47,23 @@ export default class Cliente {
         var atividade = new Atividades(titulo, data, hora); 
         this.listaAividades.push(atividade);
     }
+
+    deleteAtividade(NomeAtividade){
+        var evento = this.listaAividades[0];
+        var nomeDoEvento = evento.titulo;
+                
+        var indiceParaDeletar = -1;
+        for (let indice = 0; indice < this.listaAividades.length; indice++) {
+            
+            var atividade = this.listaAividades[indice];
+            if (atividade.titulo == nomeUsuarioDigitou) {
+                indiceParaDeletar = indice;
+            }
+        }
+        
+        if(indiceParaDeletar > -1){
+            this.listaAividades.splice(indiceParaDeletar, 0);
+        }
+
+    }
 }

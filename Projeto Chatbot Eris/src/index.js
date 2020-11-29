@@ -98,33 +98,61 @@ app.post('/webhook', (request, response) => {
     }
 
     // intente Lista de Atividades 
-    if(nomeIntencao == 'ListaDeAtividade' && clienteServico.clienteLogado){
+    if(nomeIntencao == 'ListaAtividade' && clienteServico.loginFeito){
         
-        var parametros = data.queryResult.parameters;
-        parametros = 'ListaDeAtividade';
-
-        // chamar apenas a lita com as atividades
-        var listaDeAtividade = clienteServico.clienteLogado.listaDeAtividade;
         var listaString = "";
-
-        for (let i = 0; i < cliente.listaAividades.length; i++) {
-            listaString = listaDeAtividade + ", ";
+        for (let i = 0; i < clienteServico.clienteLogado.listaAtividade.length; i++) {
+            listaString = listaString + clienteServico.clienteLogado.listaAtividade[i].name + ", ";
         }
-
+        
         var responseData =
             {
-                fulfillmentMessages: [{ text: { text: ["Essa é a sua lista de atividades: " + listaString] } }]
+                
+                fulfillmentMessages: [{ text: { text: ["Sua lista de Atividades:  " + listaString] } }]
             };
         response.json(responseData)
     
-    }else if(nomeIntencao == 'IntentListaCarrinho' && !clienteServico.clienteLogado){
+    }else if(nomeIntencao == 'ListaAtividade' && !clienteServico.loginFeito){
+        var parametros = data.queryResult.parameters;
+        parametros = 'listaAtividade';
 
         var responseData =
             {
-                fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de compras digite seu CPF."] } }]
+                fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de Atividades digite seu CPF."] } }]
             };
         response.json(responseData)
     }
+       
+    // itent adiciona carrinho
+    if(nomeIntencao == 'AdicionaEventoListaDeTarefa' && clienteServico.loginFeito){
+        var addItensCarrinho = data.queryResult.parameters.Produto;
+        
+        clienteServico.clienteLogado.addCarrinho(addItensCarrinho);
+        var responseData =
+            {
+                fulfillmentMessages: [{ text: { text: [addItensCarrinho + " adicionado na lista de compras!"] } }]
+            };
+        response.json(responseData)
+
+    }
+
+    // intent deleta atividade
+    console.log(deleteItensCarrinho)
+    if(nomeIntencao == 'DeletaEventoListaDeTarefa' && clienteServico.loginFeito){
+    
+            
+            var deleteItemLista = data.queryResult.parameters.nomeAtividade;
+            
+            clienteServico.clienteLogado.deleteCarrinho(deleteItemLista);
+    
+            var responseData =
+                {
+                    fulfillmentMessages: [{ text: { text: [deleteItemLista + "deletado da lista de atividades."] } }]
+                };
+            response.json(responseData);
+        }
+    
+    
 
 })
 
