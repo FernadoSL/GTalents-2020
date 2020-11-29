@@ -1,4 +1,3 @@
-import Atividades from "./atividade.js";
 import Mercado from "./mercado.js"
 import Atividades from "./atividade.js"
 
@@ -15,6 +14,12 @@ export default class Cliente {
         this.listaCompras.push(mercado)
     }
 
+    addAtividades = function(name){
+        
+        var atividades = new Atividades(name); 
+        this.listaAtividades.push(atividades)
+    }
+
     deleteCarrinho(nomeUsuarioDigitou){ // parametro digitado pelo usuario
 
         // lista de string
@@ -23,11 +28,11 @@ export default class Cliente {
         // lista de objetos
         // [{ name: 'cebola' }, { name: 'batata' }, { name: 'feijao' }]
 
-        var a = this.listaCompras[0]
+        //var a = this.listaCompras[0]
         // a = 'cebola'
         // a = { name: 'cebola' }
         
-        var ceb = a.name;
+        //var ceb = a.name;
         //ceb = 'cebola'
 
         var indiceParaDeletar = -1;
@@ -44,11 +49,7 @@ export default class Cliente {
         
     }
     
-    addAtividades = function(name){
-        
-        var atividades = new Atividades(name); 
-        this.listaAividades.push(atividades)
-    }
+    
 
     /*deleteAtividade(NomeAtividade){
         var evento = this.listaAividades[0];

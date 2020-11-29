@@ -54,16 +54,17 @@ app.post('/webhook', (request, response) => {
 
         var cpf = data.queryResult.parameters.number;
         clienteServico.checkCliente(cpf);
-        console.log(cpf);
+
         var responseData =
             {
-                fulfillmentMessages: [{ text: { text: ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras novamente digite 'minha lista de compras'."] } }]
+                fulfillmentMessages: [{ text: { text: ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras ou atividades digite novamente 'lista de compras' 'lista de atividades'."] } }]
             };
         response.json(responseData)
     }
 
     // itent para adicionar itens no carrinho
     if(nomeIntencao == 'IntentAdicionaCarrinho' && clienteServico.loginFeito){
+
         var addItensCarrinho = data.queryResult.parameters.Produto;
         
         clienteServico.clienteLogado.addCarrinho(addItensCarrinho);
@@ -78,11 +79,10 @@ app.post('/webhook', (request, response) => {
     // intent para deletar itens do carrinho
     if(nomeIntencao == 'IntentDeletadoCarrinho' && clienteServico.loginFeito){
 
-        
         var deleteItensCarrinho = data.queryResult.parameters.Produto;
         
         clienteServico.clienteLogado.deleteCarrinho(deleteItensCarrinho);
-
+        console.log(clienteServico.clienteLogado.deleteCarrinho);
         var responseData =
             {
                 fulfillmentMessages: [{ text: { text: [deleteItensCarrinho + "deletado da lista de compras."] } }]
@@ -94,8 +94,8 @@ app.post('/webhook', (request, response) => {
     if(nomeIntencao == 'IntentListaAtividades' && clienteServico.loginFeito){
         
         var listaString = "";
-        for (let i = 0; i < clienteServico.clienteLogado.listaAtividades.length; i++) {
-            listaString = listaString + clienteServico.clienteLogado.listaAtividades[i].name + ", ";
+        for (let j = 0; j < clienteServico.clienteLogado.listaAtividades.length; j++) {
+            listaString = listaString + clienteServico.clienteLogado.listaAtividades[j].name + ", ";
         }
         
         var responseData =
@@ -106,8 +106,8 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
     
     }else if(nomeIntencao == 'IntentListaAtividades' && !clienteServico.loginFeito){
-        var parametros = data.queryResult.parameters;
-        parametros = 'ListaAtividades';
+        var parametros1 = data.queryResult.parameters;
+        parametros1 = 'ListaAtividades';
 
         var responseData =
             {
@@ -116,21 +116,21 @@ app.post('/webhook', (request, response) => {
         response.json(responseData)
     }
        
-    // intent adiciona lista de atividades
+    // intent adiciona itens lista de atividades
     if(nomeIntencao == 'IntentAdicionaAtividade' && clienteServico.loginFeito){
-        var addEvento = data.queryResult.parameters.Produto;
+        var addEvento = data.queryResult.parameters.AtividadeFazer;
         
         clienteServico.clienteLogado.addAtividades(addEvento);
         var responseData =
             {
-                fulfillmentMessages: [{ text: { text: [addEvento + " Ativedade adicionada com sucesso!"] } }]
+                fulfillmentMessages: [{ text: { text: [addEvento + " adicionado as suas atividades com sucesso!"] } }]
             };
         response.json(responseData)
 
     }
 
-    // intent deleta atividade
-    console.log(deleteItensCarrinho)
+    // intent deleta da lista de atividades
+    /*console.log(deleteItensCarrinho)
     if(nomeIntencao == 'DeletaEventoListaDeTarefa' && clienteServico.loginFeito){
     
             
@@ -144,7 +144,7 @@ app.post('/webhook', (request, response) => {
                 };
             response.json(responseData);
         }
-    
+    }*/
     
 
 })
