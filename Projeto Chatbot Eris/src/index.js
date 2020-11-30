@@ -32,10 +32,9 @@ app.post('/webhook', (request, response) => {
         }
         
         var responseData =
-            {
-                
-                fulfillmentMessages: [{ text: { text: ["Sua lista de compras:  " + listaString] } }]
-            };
+        {            
+            fulfillmentMessages: [{ text: { text: ["Sua lista de compras:  " + listaString] } }]
+        };
         response.json(responseData)
     
     }else if(nomeIntencao == 'IntentListaCarrinho' && !clienteServico.loginFeito){
@@ -43,9 +42,9 @@ app.post('/webhook', (request, response) => {
         parametros = 'listaCompras';
 
         var responseData =
-            {
-                fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de compras digite seu CPF."] } }]
-            };
+        {
+            fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de compras digite seu CPF."] } }]
+        };
         response.json(responseData)
     }
 
@@ -56,9 +55,9 @@ app.post('/webhook', (request, response) => {
         clienteServico.checkCliente(cpf);
 
         var responseData =
-            {
-                fulfillmentMessages: [{ text: { text: ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras ou atividades digite novamente 'lista de compras' 'lista de atividades'."] } }]
-            };
+        {
+            fulfillmentMessages: [{ text: { text: ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras ou atividades digite novamente 'lista de compras' 'lista de atividades'."] } }]
+        };
         response.json(responseData)
     }
 
@@ -69,9 +68,9 @@ app.post('/webhook', (request, response) => {
         
         clienteServico.clienteLogado.addCarrinho(addItensCarrinho);
         var responseData =
-            {
-                fulfillmentMessages: [{ text: { text: [addItensCarrinho + " adicionado na lista de compras!"] } }]
-            };
+        {
+            fulfillmentMessages: [{ text: { text: [addItensCarrinho + " adicionado na lista de compras!"] } }]
+        };
         response.json(responseData)
 
     }
@@ -82,11 +81,11 @@ app.post('/webhook', (request, response) => {
         var deleteItensCarrinho = data.queryResult.parameters.Produto;
         
         clienteServico.clienteLogado.deleteCarrinho(deleteItensCarrinho);
-        console.log(clienteServico.clienteLogado.deleteCarrinho);
+        
         var responseData =
-            {
-                fulfillmentMessages: [{ text: { text: [deleteItensCarrinho + "deletado da lista de compras."] } }]
-            };
+        {
+            fulfillmentMessages: [{ text: { text: [deleteItensCarrinho + " deletado da lista de compras."] } }]
+        };
         response.json(responseData)
     }
 
@@ -99,10 +98,9 @@ app.post('/webhook', (request, response) => {
         }
         
         var responseData =
-            {
-                
-                fulfillmentMessages: [{ text: { text: ["Sua lista de Atividades:  " + listaString] } }]
-            };
+        {        
+            fulfillmentMessages: [{ text: { text: ["Sua lista de Atividades:  " + listaString] } }]
+        };
         response.json(responseData)
     
     }else if(nomeIntencao == 'IntentListaAtividades' && !clienteServico.loginFeito){
@@ -110,9 +108,9 @@ app.post('/webhook', (request, response) => {
         parametros1 = 'ListaAtividades';
 
         var responseData =
-            {
-                fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de Atividades digite seu CPF."] } }]
-            };
+        {
+            fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de Atividades digite seu CPF."] } }]
+        };
         response.json(responseData)
     }
        
@@ -122,29 +120,28 @@ app.post('/webhook', (request, response) => {
         
         clienteServico.clienteLogado.addAtividades(addEvento);
         var responseData =
-            {
-                fulfillmentMessages: [{ text: { text: [addEvento + " adicionado as suas atividades com sucesso!"] } }]
-            };
+        {
+            fulfillmentMessages: [{ text: { text: [addEvento + " adicionado as suas atividades com sucesso!"] } }]
+        };
         response.json(responseData)
 
     }
 
     // intent deleta da lista de atividades
-    /*console.log(deleteItensCarrinho)
-    if(nomeIntencao == 'DeletaEventoListaDeTarefa' && clienteServico.loginFeito){
     
+    if(nomeIntencao == 'IntentDeletaAtividade' && clienteServico.loginFeito){
             
-            var deleteItemLista = data.queryResult.parameters.nomeAtividade;
+        var deleteItemLista = data.queryResult.parameters.AtividadeFazer;
             
-            clienteServico.clienteLogado.deleteCarrinho(deleteItemLista);
+        clienteServico.clienteLogado.deleteAtividade(deleteItemLista);
     
-            var responseData =
-                {
-                    fulfillmentMessages: [{ text: { text: [deleteItemLista + "deletado da lista de atividades."] } }]
-                };
-            response.json(responseData);
-        }
-    }*/
+        var responseData =
+        {
+            fulfillmentMessages: [{ text: { text: [deleteItemLista + " deletado da lista de atividades."] } }]
+        };
+        response.json(responseData);
+        
+    }
     
 
 })

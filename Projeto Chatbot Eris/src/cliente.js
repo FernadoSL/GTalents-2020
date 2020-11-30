@@ -20,53 +20,36 @@ export default class Cliente {
         this.listaAtividades.push(atividades)
     }
 
-    deleteCarrinho(nomeUsuarioDigitou){ // parametro digitado pelo usuario
-
-        // lista de string
-        // ['cebola', 'batata', 'feijao']
-
-        // lista de objetos
-        // [{ name: 'cebola' }, { name: 'batata' }, { name: 'feijao' }]
-
-        //var a = this.listaCompras[0]
-        // a = 'cebola'
-        // a = { name: 'cebola' }
-        
-        //var ceb = a.name;
-        //ceb = 'cebola'
+    deleteCarrinho(nomeUsuarioDigitou){
 
         var indiceParaDeletar = -1;
-        for (let indice = 0; indice < this.listaCompras.length; indice++) {
-            var produto = this.listaCompras[indice];
+        for (let index = 0; index < this.listaCompras.length; index++) {
+            var produto = this.listaCompras[index];
             if (produto.name == nomeUsuarioDigitou) {
-                indiceParaDeletar = indice;
+                indiceParaDeletar = index;
             }
         }
         
         if(indiceParaDeletar > -1){
-            this.listaCompras.splice(indiceParaDeletar, 0)
+            this.listaCompras.splice(indiceParaDeletar, 1)
         }
         
     }
-    
-    
 
-    /*deleteAtividade(NomeAtividade){
-        var evento = this.listaAividades[0];
-        var nomeDoEvento = evento.titulo;
+    deleteAtividade(nomeAtividade){
                 
-        var indiceParaDeletar = -1;
-        for (let indice = 0; indice < this.listaAividades.length; indice++) {
-            
-            var atividade = this.listaAividades[indice];
-            if (atividade.titulo == nomeUsuarioDigitou) {
-                indiceParaDeletar = indice;
+        var indiceParaDeletar1 = -1;
+        for (let index = 0; index < this.listaAtividades.length; index++) {
+  
+            var atividade = this.listaAtividades[index];
+            if (atividade.name == nomeAtividade) {
+                indiceParaDeletar1 = index;
             }
         }
         
-        if(indiceParaDeletar > -1){
-            this.listaAividades.splice(indiceParaDeletar, 0);
+        if(indiceParaDeletar1 > -1){
+            this.listaAtividades.splice(indiceParaDeletar1, 1);
         }
 
-    }*/
+    }
 }
