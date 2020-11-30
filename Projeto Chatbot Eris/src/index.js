@@ -43,7 +43,7 @@ app.post('/webhook', (request, response) => {
 
         var responseData =
         {
-            fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de compras digite seu CPF."] } }]
+            fulfillmentMessages: [{ text: { text: ["Para criar ou acessar sua lista de compras digite seu CPF."] } }]
         };
         response.json(responseData)
     }
@@ -56,7 +56,7 @@ app.post('/webhook', (request, response) => {
 
         var responseData =
         {
-            fulfillmentMessages: [{ text: { text: ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras ou atividades digite novamente 'lista de compras' 'lista de atividades'."] } }]
+            fulfillmentMessages: [{ text: { text: ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras ou atividades digite novamente 'lista de compras' ou 'lista de atividades'."] } }]
         };
         response.json(responseData)
     }
@@ -109,7 +109,7 @@ app.post('/webhook', (request, response) => {
 
         var responseData =
         {
-            fulfillmentMessages: [{ text: { text: ["Para acessar sua lista de Atividades digite seu CPF."] } }]
+            fulfillmentMessages: [{ text: { text: ["Para criar ou acessar sua lista de atividades digite seu CPF."] } }]
         };
         response.json(responseData)
     }
