@@ -32,9 +32,26 @@ app.post('/webhook', (request, response) => {
         }
         
         var responseData =
+       /* resposta para texto:
         {            
             fulfillmentMessages: [{ text: { text: ["Sua lista de compras:  " + listaString] } }]
-        };
+        };*/
+        { //resposta para o google assistant:
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: "Sua lista de compras:  " + listaString
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         response.json(responseData)
     
     }else if(nomeIntencao == 'IntentListaCarrinho' && !clienteServico.loginFeito){
@@ -42,9 +59,27 @@ app.post('/webhook', (request, response) => {
         parametros = 'listaCompras';
 
         var responseData =
+        /* resposta para texto:
         {
-            fulfillmentMessages: [{ text: { text: ["Para criar ou acessar sua lista de compras digite seu CPF."] } }]
-        };
+           fulfillmentMessages: [{ "text": { "text": ["Para criar ou acessar sua lista de compras digite seu CPF."] } }]
+        };*/
+        {
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: "Para criar ou acessar sua lista de compras me diga seu CPF."
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+          
         response.json(responseData)
     }
 
@@ -55,9 +90,26 @@ app.post('/webhook', (request, response) => {
         clienteServico.checkCliente(cpf);
 
         var responseData =
+        /*
         {
-            fulfillmentMessages: [{ text: { text: ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras ou atividades digite novamente 'lista de compras' ou 'lista de atividades'."] } }]
-        };
+            "fulfillmentMessages": [{ "text": { "text": ["Seus dados foram registrados com sucesso! Para acessar sua lista de compras ou atividades digite novamente 'lista de compras' ou 'lista de atividades'."] } }]
+        };*/
+        {
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: "Seus dados foram registrados com sucesso! Para acessar sua lista de compras ou atividades digite novamente 'lista de compras' ou 'lista de atividades'."
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         response.json(responseData)
     }
 
@@ -68,9 +120,26 @@ app.post('/webhook', (request, response) => {
         
         clienteServico.clienteLogado.addCarrinho(addItensCarrinho);
         var responseData =
+        /*
         {
             fulfillmentMessages: [{ text: { text: [addItensCarrinho + " adicionado na lista de compras!"] } }]
-        };
+        };*/
+        {
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: addItensCarrinho + " adicionado na lista de compras!"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         response.json(responseData)
 
     }
@@ -83,9 +152,26 @@ app.post('/webhook', (request, response) => {
         clienteServico.clienteLogado.deleteCarrinho(deleteItensCarrinho);
         
         var responseData =
+        /*
         {
             fulfillmentMessages: [{ text: { text: [deleteItensCarrinho + " deletado da lista de compras."] } }]
-        };
+        };*/
+        {
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: deleteItensCarrinho + " deletado da lista de compras."
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         response.json(responseData)
     }
 
@@ -98,9 +184,26 @@ app.post('/webhook', (request, response) => {
         }
         
         var responseData =
+        /*
         {        
             fulfillmentMessages: [{ text: { text: ["Sua lista de Atividades:  " + listaString] } }]
-        };
+        };*/
+        {
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: "Sua lista de Atividades:  " + listaString
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         response.json(responseData)
     
     }else if(nomeIntencao == 'IntentListaAtividades' && !clienteServico.loginFeito){
@@ -108,9 +211,26 @@ app.post('/webhook', (request, response) => {
         parametros1 = 'ListaAtividades';
 
         var responseData =
+        /*
         {
             fulfillmentMessages: [{ text: { text: ["Para criar ou acessar sua lista de atividades digite seu CPF."] } }]
-        };
+        };*/
+        {
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: "Para criar ou acessar sua lista de atividades me diga seu CPF."
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         response.json(responseData)
     }
        
@@ -120,9 +240,26 @@ app.post('/webhook', (request, response) => {
         
         clienteServico.clienteLogado.addAtividades(addEvento);
         var responseData =
+        /*
         {
             fulfillmentMessages: [{ text: { text: [addEvento + " adicionado as suas atividades com sucesso!"] } }]
-        };
+        };*/
+        {
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: addEvento + " adicionado as suas atividades com sucesso!"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         response.json(responseData)
 
     }
@@ -136,9 +273,26 @@ app.post('/webhook', (request, response) => {
         clienteServico.clienteLogado.deleteAtividade(deleteItemLista);
     
         var responseData =
+        /*
         {
             fulfillmentMessages: [{ text: { text: [deleteItemLista + " deletado da lista de atividades."] } }]
-        };
+        };*/
+        {
+            payload: {
+              google: {
+                expectUserResponse: true,
+                richResponse: {
+                  items: [
+                    {
+                      simpleResponse: {
+                        textToSpeech: deleteItemLista + " deletado da lista de atividades."
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
         response.json(responseData);
         
     }
